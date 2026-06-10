@@ -4,9 +4,13 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'modulo2/**'
   pull_request:
     branches:
-      - master  
+      - master
+    paths:
+      - 'modulo2/**'
 
 jobs:
   test:
@@ -21,9 +25,9 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        working-directory: modulo1
+        working-directory: modulo2
         run: python -m pip install --upgrade pip && pip install -r requirements.txt
 
       - name: Run tests
-        working-directory: modulo1
+        working-directory: modulo2
         run: python -m pytest
