@@ -1,5 +1,5 @@
 def run_teste(inputs):
-    script = open("Teste.py", encoding="utf-8").read()
+    script = open("funcoes.py", encoding="utf-8").read()
     answers = iter(inputs.splitlines())
 
     def input(prompt=""):
