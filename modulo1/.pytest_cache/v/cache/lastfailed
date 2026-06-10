@@ -1,1 +1,4 @@
-{}
+{
+  "modulo 1/test_teste.py::test_numero_par_elevado": true,
+  "modulo 1/test_teste.py::test_numero_impar_elevado": true
+}
