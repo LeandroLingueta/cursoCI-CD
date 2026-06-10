@@ -5,7 +5,7 @@ def run_teste(inputs):
     def input(prompt=""):
         return next(answers)
 
-    exec(script, {"input": input, "__name__": "__main__"})
+    exec(script, {"input": input, "__name__": "__main__"}) 
 
 
 def test_numero_par_elevado(capsys):
